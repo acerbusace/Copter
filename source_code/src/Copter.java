@@ -1,11 +1,11 @@
-/** The "Copter101" class.
+/** The "Copter" class.
 * Purpose: Plays the Copter Game
 * @author Alex Patel
 * @version January, 14, 2012
 */
-import java.applet.Applet; //allows the usuage of applets
+import java.applet.Applet; //allows the usage of applets
 import java.awt.*;
-import java.awt.Canvas; //alows the creation of canvases
+import java.awt.Canvas; //allows the creation of canvases
 import java.awt.Color; //allows the usage of different colors
 import java.awt.Font; //allows the creation of different fonts
 import java.awt.Graphics; //allows the use of graphics
@@ -18,7 +18,7 @@ import java.awt.image.BufferStrategy; //used for double buffering
 import java.util.Random; //allows the usage of random generators
 
 
-public class Copter101 extends Applet implements MouseListener, Runnable
+public class Copter extends Applet implements MouseListener, Runnable
 {
 
     //http://www.youtube.com/watch?v=OEzVB51KBrw  -  Double Buffering
@@ -204,7 +204,7 @@ public class Copter101 extends Applet implements MouseListener, Runnable
 	//http://www.java-gaming.org/index.php?topic=24356.0  -  Canvas
 	canvas = new Canvas ();
 	canvas.setSize (this.getSize ().width, this.getSize ().height);
-	add (canvas); //adds the canvas to the Copter101 class
+	add (canvas); //adds the canvas to the Copter class
 	canvas.createBufferStrategy (2); //creates a BufferStrategy inside canvas
 	canvas.addMouseListener (this); //tells canvas we will be using mouse listener
 
